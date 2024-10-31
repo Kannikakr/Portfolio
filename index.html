@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="wrapper" id="wrapper">
+        <div class="container">
+            <div class="navbar">
+                <div class="logo-container">
+                    <img src="./img/navlogomine.png" alt="logo">
+                    <div class="logo-text">annika</div>
+                </div>
+
+                <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+                <div class="nav-items" id="navItems">
+                    <div><a href="">Home</a></div>
+                    <div><a href="">Projects</a></div>
+                    <div><a href="">Skills</a></div>
+                    <div><a href="">Contact Form</a></div>
+                </div>
+            </div>
+        </div>
+        <br><br><br><br>
+        <div class="hero">
+
+            <div class="hero-left">
+                <div class="hero-heading">Hi, I am Kannika</div>
+                <div class="hero-heading hero-sub">
+                    I am a <span class="role"></span>
+                </div>
+                <div class="hero-dis">
+                    Lorem ipsum Lorem ipsum dolor sit amet.dolor sit amet consectetur adipisicing elit. Officia, ea?
+                </div>
+                <div class="btn" id="btn">
+                    <button>Download CV</button>
+                    <button>Hire me</button>
+                </div>
+            </div>
+
+            <div class="hero-right">
+                <div class="absolute icons dot">
+                    <img src="./img/dots.png" alt="">
+                </div>
+                <div class="absolute icons cube">
+                    <img src="./img/cube.png" alt="">
+                </div>
+                <div class="absolute icons circle">
+                    <img src="./img/circle.png" alt="">
+                </div>
+                <div class="absolute icons zig">
+                    <img src="./img/zigzags.png" alt="">
+                </div>
+                <div class="absolute icons plus">
+                    <img src="./img/plus.png" alt="">
+                </div>
+                <div class="userimg">
+                    <img src="./img/main img.jpg" alt="">
+                </div>
+            </div>
+
+        </div>
+        <br><br>
+        <div class="faddedtext">
+            __Kannika_
+        </div>
+        <br><br><br>
+        <div class="projects">
+            <h1>Projects</h1>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script>
+        function toggleMenu() {
+            const navItems = document.getElementById('navItems');
+            navItems.classList.toggle('show');
+        }
+
+        var typedata = new Typed(".role", {
+            strings: ["full stack developer", "web developer", "UI-UX developer", "coder"],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1000,
+        });
+    </script>
+</body>
+
+</html>

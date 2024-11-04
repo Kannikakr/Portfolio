@@ -83,7 +83,7 @@
         flex-direction: column-reverse;
         gap: 30px;
         column-gap: 100px;
-        padding-top: 60px; /* Adds space to avoid overlap with navbar */
+        padding-top: 60px; 
     }
 
     .nav-items.show {
@@ -102,13 +102,13 @@
         padding-left: 0;
     }
 
-    /* Ensure animated elements are positioned below navbar */
+
     .hero-right {
         position: relative;
-        z-index: 5; /* Lower z-index than navbar */
+        z-index: 5; 
     }
 
-    /* Adjust other animated elements as needed */
+
     .dot, .cube, .circle, .zig, .plus {
         z-index: 5;
     }

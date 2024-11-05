@@ -42,17 +42,40 @@
 }
 
 .nav-items div a {
-    text-decoration: none;
-    font-size: 1.2rem;
-    font-weight: 400;
+    font-size: 18px;
+    color: #4e45d5;
+    font-family: inherit;
+    font-weight: 500;
     cursor: pointer;
-    color: black;
+    position: relative;
+    border: none;
+    background: none;
+   text-decoration: none;
 }
 
+.nav-items div a:focus,
 .nav-items div a:hover {
-    color: rgb(156, 29, 29);
-    background-color: rgb(198, 198, 209);
-    padding: 5px;
+    color: #150d8f;
+}
+
+.nav-items div a:focus::after,
+.nav-items div a:hover::after {
+    width: 100%;
+    left: 0;
+}
+
+.nav-items div a::after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: red;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
 }
 
 .menu-toggle {

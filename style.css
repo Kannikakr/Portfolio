@@ -347,7 +347,9 @@
     transition: box-shadow 0.2s ease-in;
 }
 
-.space{
+.skills{
+    height: 100vh;
     width: 100vw;
-    height: 1000px;
+    background-color: aqua;
 }
+
